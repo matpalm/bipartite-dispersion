@@ -1,0 +1,22 @@
+graph G {
+
+ graph [bgcolor=transparent]
+ rankdir=LR;
+
+ subgraph cluster_0 {
+  i1, i2, i3;
+  label = "items";
+ }
+									
+ subgraph cluster_1 {
+  u1, u2, u3;
+  label = "users";
+ }
+
+ u1 -- i1;
+ u2 -- i1;
+ u2 -- i2;
+ u2 -- i3;
+ u3 -- i3;
+
+}
